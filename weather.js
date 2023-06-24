@@ -36,7 +36,7 @@ async function fetchSeatherData(target){
         let location = data.location.name; 
         let timeAndDate = data.location.localtime;
         let iconImage = data.current.condition.icon;
-        console.log(currentTemp, currentCondition, location, timeAndDate, iconImage);
+        // console.log(currentTemp, currentCondition, location, timeAndDate, iconImage);
         updateDom(currentTemp, currentCondition, location, timeAndDate, iconImage);
     }
 
@@ -50,7 +50,7 @@ async function fetchSeatherData(target){
 function updateDom(temp, condition, location, timeDate, icon){
    
     let dateTime = timeDate.split(" ");
-    console.log(dateTime);
+    // console.log(dateTime);
 
     let date = dateTime[0];
     let time = dateTime[1];
